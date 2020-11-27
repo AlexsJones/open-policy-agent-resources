@@ -2,6 +2,9 @@ apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredLabels
 metadata:
   name: pod-must-have-type
+  namespace: gatekeeper
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   match:
     kinds:

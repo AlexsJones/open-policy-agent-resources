@@ -3,8 +3,6 @@ kind: K8sRequiredLabels
 metadata:
   name: ns-must-have-gk
   namespace: gatekeeper
-  annotations:
-    argocd.argoproj.io/sync-wave: "3"
 spec:
   match:
     kinds:
