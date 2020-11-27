@@ -4,7 +4,7 @@ metadata:
   name: k8srequiredlabels
   namespace: gatekeeper
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/hook: PreSync
 spec:
   crd:
     spec:
