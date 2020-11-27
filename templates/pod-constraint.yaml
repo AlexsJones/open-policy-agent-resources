@@ -4,7 +4,8 @@ metadata:
   name: pod-must-have-type
   namespace: gatekeeper
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   match:
     kinds:
